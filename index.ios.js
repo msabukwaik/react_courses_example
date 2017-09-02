@@ -14,8 +14,6 @@ import MainScreen from './src/components/MainScreen'
 import ProfileScreen from './src/components/ProfileScreen'
 
 const courses = StackNavigator({
-  MainScreen : {screen : MainScreen},
-  ProfileScreen : {screen : ProfileScreen},
   NativeCourses : {screen : NativeCourses},
   ReactCourses: { screen : ReactCourses},
   
