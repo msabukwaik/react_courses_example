@@ -14,14 +14,14 @@ export default class ReactCourses extends Component {
     }
 
   render() {
-      const { navigate } = this.props.navigation;
+      const { goBack } = this.props.navigation;
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
           Welcome to React Courses!
         </Text>
-        <Button onPress={() => navigate('NativeCourses')} 
-            title="React Courses" />
+        <Button onPress={() => goBack()} 
+            title="Go Back" />
       </View>
     );
   }

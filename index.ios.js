@@ -10,10 +10,15 @@ import {StackNavigator} from 'react-navigation'
 import App from './src/components/App'
 import NativeCourses from './src/components/NativeCourses'
 import ReactCourses from './src/components/ReactCourses'
+import MainScreen from './src/components/MainScreen'
+import ProfileScreen from './src/components/ProfileScreen'
 
 const courses = StackNavigator({
-  ReactCourses: { screen : ReactCourses},
+  MainScreen : {screen : MainScreen},
+  ProfileScreen : {screen : ProfileScreen},
   NativeCourses : {screen : NativeCourses},
+  ReactCourses: { screen : ReactCourses},
+  
 });
 
 
