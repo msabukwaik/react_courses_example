@@ -6,12 +6,12 @@
 
 import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
-import {stackNavigator} from 'react-navigation'
+import {StackNavigator} from 'react-navigation'
 import App from './src/components/App'
 import NativeCourses from './src/components/NativeCourses'
 import ReactCourses from './src/components/ReactCourses'
 
-const courses = stackNavigator({
+const courses = StackNavigator({
   ReactCourses: { screen : ReactCourses},
   NativeCourses : {screen : NativeCourses},
 });
